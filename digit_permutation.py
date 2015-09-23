@@ -5,16 +5,12 @@
 # можно получить друг из друга перестановкой цифр.
 
 
-def is_palindrome(number4x, number5x):
-    return sorted(str(number4x)) == sorted(str(number5x))
-
-
 def solve():
     number = 1
     while True:
         number4x = number*4
         number5x = number*5
-        if is_palindrome(number4x, number5x):
+        if sorted(str(number4x)) == sorted(str(number5x)):
             return number, number4x, number5x
         number += 1
 
