@@ -1,0 +1,4 @@
+paver       # automation tool
+pylint      # syntax validation
+pytest      # test tool
+pytest-cov  # coverage integration for pytest
